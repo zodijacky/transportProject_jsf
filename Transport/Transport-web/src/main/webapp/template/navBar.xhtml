@@ -1,0 +1,85 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"	
+	
+	>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lumino - Icons</title>
+
+<link href="dashboardResources/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="dashboardResources/css/datepicker3.css" rel="stylesheet"/>
+<link href="dashboardResources/css/styles.css" rel="stylesheet"/>
+
+<!--Icons-->
+<script src="dashboardResources/js/lumino.glyphs.js"></script>
+
+
+</head>
+
+
+	
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+			<img class="media-object img-thumbnail user-img" alt="User Picture" src="dashboardResources/img/user.jpg"/>
+		</form>
+		<ul class="nav menu">
+			<li class="active"><a href="index.xhtml"><svg class="glyph stroked dashboard-dial"></svg> Dashboard</a></li>
+			<li><a href="widgets.html"><svg class="glyph stroked calendar"></svg> Widgets</a></li>
+			<li><a href="charts.html"><svg class="glyph stroked line-graph"></svg> Charts</a></li>
+			<li><a href="tables.html"><svg class="glyph stroked table"></svg> Tables</a></li>
+			<li><a href="forms.html"><svg class="glyph stroked pencil"></svg> Forms</a></li>
+			<li><a href="panels.html"><svg class="glyph stroked app-window"></svg> Alerts &amp; Panels</a></li>
+			
+			<li><a href="dashboard.html"><svg class="glyph stroked star"></svg> Ask for a ride</a></li>
+			<li><a href="../Request/ShowRequest.xhtml"><svg class="glyph stroked star"></svg> show request</a></li>
+			
+	
+			<li class="parent ">
+				<a href="#">
+					<span data-toggle="collapse" ><svg class="glyph stroked chevron-down"></svg></span> Dropdown 
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"></svg> Sub Item 1
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"></svg> Sub Item 2
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"></svg> Sub Item 3
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation" class="divider"></li>
+			<li><a href="login.xhtml"><svg class="glyph stroked male-user"></svg> Login Page</a></li>
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	
+	
+  
+	<script src="dashboardResources/js/jquery-1.11.1.min.js"></script>
+	<script src="dashboardResources/js/bootstrap.min.js"></script>
+
+
+	<script src="dashboardResources/js/bootstrap-datepicker.js"></script>
+	
+	
+
+
+
+</ui:composition>

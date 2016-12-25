@@ -1,0 +1,9 @@
+package pi.transport.services;
+
+import javax.ejb.Local;
+
+
+@Local
+public interface GwMailServiceRemote {
+	 public void sendEmail(String to, String from, String subject, String content);
+}

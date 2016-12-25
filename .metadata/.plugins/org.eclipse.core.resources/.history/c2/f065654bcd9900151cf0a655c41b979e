@@ -1,0 +1,230 @@
+package pi.transport.persistance;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+@Table(name="t_user")
+public class User implements Serializable 
+{
+	private static final long serialVersionUID = 1L;
+	
+	private Integer cin;
+	private String login;
+	private String password;
+	private String firstName;
+	private String lastName;
+    private Date birthDate;
+	private String adress;
+	private String mail;
+	private String phoneNumber;
+	private byte[] picture;
+	private List<Reclamation> reclamations;
+	private List<Request> requests;
+	
+	
+	public User () {}
+	
+	
+
+
+
+	public User(Integer cin, String login, String passWord) {
+		super();
+		this.cin = cin;
+		this.login = login;
+		this.passWord = passWord;
+		this.reclamations=new ArrayList<Reclamation>();
+		this.requests=new ArrayList<Request>();
+		
+	}
+
+
+
+
+
+	public User(Integer cin, String login, String passWord, String firstName,
+			String lastName) {
+		super();
+		this.cin = cin;
+		this.login = login;
+		this.passWord = passWord;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+
+
+
+
+	public User(Integer cin, String login, String passWord, String firstName,
+			String lastName, Date birthDate, String adress, String mail,
+			String phoneNumber, byte[] picture,
+			List<Reclamation> reclamations, List<Request> requests) {
+		super();
+		this.cin = cin;
+		this.login = login;
+		this.passWord = passWord;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthDate = birthDate;
+		this.adress = adress;
+		this.mail = mail;
+		this.phoneNumber = phoneNumber;
+		this.picture = picture;
+		this.reclamations = reclamations;
+		this.requests = requests;
+	}
+
+
+
+
+
+	public User(Integer cin, String login, String passWord, String firstName,
+			String lastName, Date birthDate, String adress, String mail,
+			String phoneNumber) {
+		super();
+		this.cin = cin;
+		this.login = login;
+		this.passWord = passWord;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthDate = birthDate;
+		this.adress = adress;
+		this.mail = mail;
+		this.phoneNumber = phoneNumber;
+		this.reclamations=new ArrayList<Reclamation>();
+		this.requests=new ArrayList<Request>();
+		
+	}
+
+	@Id
+	public Integer getCin() {
+		return cin;
+	}
+
+	public void setCin(Integer cin) {
+		this.cin = cin;
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public String getPassWord() {
+		return passWord;
+	}
+
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	@Temporal(TemporalType.DATE)
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public String getAdress() {
+		return adress;
+	}
+
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+
+	public String getMail() {
+		return mail;
+	}
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	@Lob
+	public byte[] getPicture() {
+		return picture;
+	}
+
+	public void setPicture(byte[] picture) {
+		this.picture = picture;
+	}
+
+
+
+
+    @OneToMany(mappedBy="user")
+	public List<Reclamation> getReclamations() {
+		return reclamations;
+	}
+
+
+	public void setReclamations(List<Reclamation> reclamations) {
+		this.reclamations = reclamations;
+	}
+
+    @OneToMany(mappedBy="user")
+	public List<Request> getRequests() {
+		return requests;
+	}
+   public void setRequests(List<Request> requests) {
+		this.requests = requests;
+	}
+
+
+
+
+
+@Override
+public String toString() {
+	return "cin=" + cin + ", login=" + login + ", passWord=" + passWord
+			+ ", firstName=" + firstName + ", lastName=" + lastName
+			+ ", birthDate=" + birthDate + ", adress=" + adress + ", mail="
+			+ mail + ", phoneNumber=" + phoneNumber + "]";
+}
+
+
+	
+	
+	}	

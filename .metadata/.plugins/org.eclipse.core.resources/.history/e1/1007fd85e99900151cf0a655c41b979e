@@ -1,0 +1,26 @@
+package pi.transport.services;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class GwMailService
+ */
+@Stateless
+@LocalBean
+public class GwMailService implements GwMailServiceRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public GwMailService() {
+        // TODO Auto-generated constructor stub
+    }
+
+	@Override
+	public void sendEmail(String to, String from, String subject, String content) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

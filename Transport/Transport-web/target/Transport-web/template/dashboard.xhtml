@@ -1,0 +1,43 @@
+<html
+xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+>
+<head>
+
+<title>Lumino - Dashboard</title>
+
+</head>
+
+<body>
+	
+	<div id="horizon">
+			<div id="sideBar">
+				<ui:include src="/template/navBar.xhtml" />
+			</div>
+			
+		</div>
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main" >		
+		
+		
+		<div class="row">
+		<ui:insert name="pageContent" />
+		</div>	
+								
+	</div>
+		
+	
+  
+	<script src="dashboardResources/js/jquery-1.11.1.min.js"></script>
+	<script src="dashboardResources/js/bootstrap.min.js"></script>
+	<script src="dashboardResources/js/bootstrap-datepicker.js"></script>
+	
+	
+</body>
+
+</html>

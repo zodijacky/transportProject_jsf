@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Transport">
+	
+	<jta-data-source>java:/TransportDS</jta-data-source>
+	<class>pi.transport.persistance.Admin</class>
+	<class>pi.transport.persistance.Bus</class>
+	<class>pi.transport.persistance.Course</class>
+	<class>pi.transport.persistance.Driver</class>
+	<class>pi.transport.persistance.News</class>
+	<class>pi.transport.persistance.PrivateTransport</class>
+	<class>pi.transport.persistance.PublicTransport</class>
+	<class>pi.transport.persistance.RailTransport</class>
+	<class>pi.transport.persistance.Reclamation</class>
+	<class>pi.transport.persistance.Request</class>
+	<class>pi.transport.persistance.Route</class>
+	<class>pi.transport.persistance.Sector</class>
+	<class>pi.transport.persistance.Student</class>
+	<class>pi.transport.persistance.Subscription</class>
+    	<class>pi.transport.persistance.Taxi</class>
+    	<class>pi.transport.persistance.Transport</class>
+    	<class>pi.transport.persistance.Trip</class>
+		<class>pi.transport.persistance.TripSchedule</class>
+		<class>pi.transport.persistance.User</class>
+   		<class>pi.transport.persistance.Van</class>
+   		<class>pi.transport.persistance.WheelChairVan</class>
+	
+	<properties>
+		<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+	</properties>	
+	
+	
+	
+	
+	</persistence-unit>
+</persistence>

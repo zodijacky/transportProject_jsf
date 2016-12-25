@@ -1,0 +1,53 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:form>
+		<div class="col-xs-12 col-sm-9">
+			<div class="shopping-cart ">
+				<ul>
+					<li class="shop-categories hidden-xs">
+						<div class="product">
+							<h6>Name</h6>
+						</div>
+						<div class="price">
+							<h6>Available</h6>
+						</div>
+						<div class="quantity">
+							<h6>Sector</h6>
+						</div>
+						
+						
+					</li>
+					<ui:repeat var="p" value="#{routeSMB.routes}">
+						<li>
+							<div class="product-here zoom">
+								
+								<div class="product-name">
+									<strong><p:outputLabel value="#{p.name}" />
+									</strong> <span>single license</span>
+								</div>
+							</div>
+							<div class="price-value"><p:outputLabel value="#{p.sector}" /></div>
+						
+							<div class="total-value">
+								<span><p:outputLabel value="#{p.available}" /></span>
+							</div>
+							<div class="delete-box">
+								<a href="#"><img src="assets/images/bin.png" alt="" /></a>
+							</div>
+						</li>
+
+					</ui:repeat>
+				</ul>
+			</div>
+		</div>
+
+		<h:commandButton actionListener="#{routeSMB.doNew()}" value="new" />
+	</h:form>
+
+</ui:composition>

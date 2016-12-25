@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1448820633467_0" label="Transport" name="Transport">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Transport-ejb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Transport" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Transport-ear" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Transport-web" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1448905692479_1" label="Window Working Set" name="Aggregate for window 1448905692479"/>
+</workingSetManager>

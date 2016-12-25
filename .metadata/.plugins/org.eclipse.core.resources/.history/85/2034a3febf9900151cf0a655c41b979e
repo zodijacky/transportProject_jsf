@@ -1,0 +1,55 @@
+package pi.transport.presentation.mbeans;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import pi.transport.services.UserService;
+
+@ManagedBean
+@SessionScoped
+public class InscriptionBean {
+
+	@EJB
+	private UserService  service;
+	private Integer cin;
+	private String login;
+	private String passWord;
+	private String firstName;
+	private String lastName;
+	
+	
+	
+	public Integer getCin() {
+		return cin;
+	}
+	public void setCin(Integer cin) {
+		this.cin = cin;
+	}
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getPassWord() {
+		return passWord;
+	}
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	
+}

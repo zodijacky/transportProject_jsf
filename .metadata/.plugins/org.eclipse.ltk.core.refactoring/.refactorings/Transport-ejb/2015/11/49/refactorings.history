@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;pi.transport.persistance.Sector.routesSuggestion&apos; in &apos;pi.transport.persistance.Sector&apos;&#x0D;&#x0A;- Original project: &apos;Transport-ejb&apos;&#x0D;&#x0A;- Original element: &apos;pi.transport.persistance.Sector.routesSuggestion&apos;&#x0D;&#x0A;- Getter method name: &apos;getRoutesSuggestion&apos;&#x0D;&#x0A;- Setter method name: &apos;setRoutesSuggestion&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;routesSuggestion&apos;" flags="589830" getter="getRoutesSuggestion" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java&lt;pi.transport.persistance{Sector.java[Sector^routesSuggestion" insertion="10" setter="setRoutesSuggestion" stamp="1448919583557" version="1.0" visibility="1"/>
+</session>

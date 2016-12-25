@@ -1,0 +1,65 @@
+package pi.transport.presentation.mbeans;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import pi.transport.services.GwMailServiceRemote;
+
+
+@ManagedBean
+@SessionScoped
+public class MailBean {
+	
+	@EJB
+ private GwMailServiceRemote MailService;
+		 String Subject;
+		 String To;
+		 String Mail;
+		 String Content;
+ 
+ 
+ public String getSubject() {
+	return Subject;
+}
+
+
+public void setSubject(String subject) {
+	Subject = subject;
+}
+
+
+public String getTo() {
+	return To;
+}
+
+
+public void setTo(String to) {
+	To = to;
+}
+
+
+public String getMail() {
+	return Mail;
+}
+
+
+public void setMail(String mail) {
+	Mail = mail;
+}
+
+
+public String getContent() {
+	return Content;
+}
+
+
+public void setContent(String content) {
+	Content = content;
+}
+
+
+public void SendMail(){
+	 
+	 MailService.sendEmail(To,"rahma.bettaieb@esprit.tn", Subject, Content);
+ }
+}

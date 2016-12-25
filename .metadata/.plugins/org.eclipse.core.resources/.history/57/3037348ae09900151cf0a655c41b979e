@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+	
+<head>
+
+	<title>
+	<ui:insert name="pageTitle" /></title>	
+	<link rel="shortcut icon" type="image/con"
+		href="/favicon.ico" />
+
+	
+
+
+</head>
+
+	
+		<div id="header"></div>
+		
+		<div id="horizon">
+			<div id="topbar">
+				<ui:include src="/template/TopBar.xhtml" />
+			</div>
+			
+		</div>
+		<hr></hr>
+		<div id="main">
+			<div id="navigation">
+				
+			</div>
+			<div id="content">
+				<ui:insert name="pageContent" />
+				
+			</div>
+		</div>
+		<hr></hr>
+		<div id="footer">
+			<ui:include src="/template/Footer.xhtml" />
+		</div>
+	
+	<script type="text/javascript" src="../resources/js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../resources/js/owl.carousel.js"></script>
+		<script type="text/javascript" src="../resources/js/jquery.selectbox-0.2.min.js"></script>
+		<script type="text/javascript" src="../resources/js/parallax.js"></script>
+		<script src="../resources/js/theme-option/style-switcher/assets/js/style.switcher.js"></script>
+		<script src="../resources/js/theme-option/style-switcher/assets/js/jquery.cookie.js"></script>
+
+	
+		<script src="../resources/js/script.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../resources/js/site.js"></script>
+
+</html>

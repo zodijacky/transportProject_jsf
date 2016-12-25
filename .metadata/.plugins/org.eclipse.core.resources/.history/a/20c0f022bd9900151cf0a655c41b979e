@@ -1,0 +1,5 @@
+package pi.transport.presentation.mbeans;
+
+public class InscriptionBean {
+
+}

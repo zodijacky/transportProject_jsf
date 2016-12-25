@@ -1,0 +1,58 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="/template/template.xhtml">
+                	
+			<ui:define name="pageTitle">register</ui:define>		
+			<ui:define name="pageContent">
+				
+				
+				<h:form id="register">
+					<h:panelGrid columns="2">
+						
+						
+						
+						
+						
+						<h:outputText value="Email" />
+						<h:inputText id="mail" value="#{inscriptionBean.mail}">
+							
+						</h:inputText>
+					<h:outputText value="Password" />
+						<h:inputSecret id="password" value="#{inscriptionBean.password}" >
+							
+						</h:inputSecret>
+						
+						
+						<h:outputText value="CIN" />
+						<h:inputText id="cin" value="#{inscriptionBean.cin}" >
+							
+						</h:inputText>
+						
+						<h:outputText value="Lastname" />
+						<h:inputText id="lastname" value="#{inscriptionBean.lastName}" >
+							
+						</h:inputText>
+						
+						<h:outputText value="Firstname" />
+						<h:inputText id="firstname" value="#{inscriptionBean.firstName}" >
+							
+						</h:inputText>
+						
+						<h:outputText value="Adress" />
+						<h:inputText id="adress" value="#{inscriptionBean.adress}" >
+							
+						</h:inputText>
+						
+						<h:commandButton action="#{inscriptionBean.inscription()}" value="sign up" />
+					</h:panelGrid>	
+					
+					
+					
+				</h:form>
+			
+			
+			
+			</ui:define>
+</ui:composition>

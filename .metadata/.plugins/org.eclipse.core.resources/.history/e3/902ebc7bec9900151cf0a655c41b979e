@@ -1,0 +1,30 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="/template/template.xhtml">
+                	
+			<ui:define name="pageTitle">send mail</ui:define>		
+			<ui:define name="pageContent">
+				
+				
+	<h:form id="send mail">
+		<h:panelGrid columns="2">
+						<h:outputText value="TO" />
+						<h:inputText id="To" value="#{mailBean.to}">
+					    </h:inputText>
+					   <h:outputText value="Subject" />
+						<h:inputText id="subject" value="#{mailBean.subject}" >		
+						</h:inputText>
+						
+						
+						<h:outputText value="Content" />
+						<h:inputTextarea value="#{mailBean.content}" /> 
+							
+						</h:inputTextarea>
+		<h:commandButton action="#{mailBean.SendMail()}" value="Send" />	
+		</h:panelGrid>	
+		</h:form>
+	
+			</ui:define>
+</ui:composition>

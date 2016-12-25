@@ -1,0 +1,31 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+                	
+			<ui:define name="pageTitle">send mail</ui:define>		
+			<ui:define name="pageContent">
+				
+				
+	<h:form id="send mail">
+		<h:panelGrid columns="2">
+						<h:outputText value="TO" />
+						<h:inputText id="To" value="#{mailBean.to}">
+					    </h:inputText>
+					   <h:outputText value="Subject" />
+						<h:inputText id="subject" value="#{mailBean.subject}" >		
+						</h:inputText>
+						
+						
+						<h:outputText value="Content" />
+						<h:inputTextarea value="#{mailBean.content}" /> 
+							
+						
+		           <h:commandButton action="#{mailBean.SendMail()}" value="Send" />	
+		</h:panelGrid>
+		</h:form>
+	</ui:define>
+</ui:composition>

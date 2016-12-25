@@ -1,0 +1,45 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:form>
+	<div class="box-table">
+		<h:dataTable value="#{routeSMB.routes}" var="p" border="1">
+			<h:column>
+				<f:facet name="header">
+					<h:outputText value="Name" />
+				</f:facet>
+				<h:outputText value="#{p.name}" />
+			</h:column>
+			
+			<h:column>
+				<f:facet name="header">
+					<h:outputText value="Availability" />
+				</f:facet>
+				<h:outputText value="#{p.available}" />
+			</h:column>
+			
+			<h:column>
+				<f:facet name="header">
+					<h:outputText value="Sector" />
+				</f:facet>
+				<h:outputText value="#{p.sector.area}" />
+			</h:column>
+			
+			<h:column>
+				<f:facet name="header">
+					<h:outputText value="Action" />
+				</f:facet>
+				<h:commandButton actionListener="#{routeSMB.doSelect(p)}" value="select" />
+			</h:column>
+			
+		</h:dataTable>
+		</div>
+		<h:commandButton actionListener="#{routeSMB.doNew()}" value="new" />
+	</h:form>
+
+</ui:composition>

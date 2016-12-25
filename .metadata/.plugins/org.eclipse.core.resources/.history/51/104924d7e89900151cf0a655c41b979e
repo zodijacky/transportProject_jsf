@@ -1,0 +1,37 @@
+package pi.transport.persistance;
+
+public class GwMessage {
+	private static final Logger log = LoggerFactory.getLogger(GwMessage.class);
+	 
+	 @Resource(mappedName="java:jboss/mail/Gmail")
+	 Session gmailSession;
+	 
+	 /**
+	     * Default constructor. 
+	     */
+	    public GwMessage() {
+	    }
+	    
+	    @Asynchronous
+	    public void sendEmail(String to, String from, String subject, String content) {
+	     
+	     log.info("Sending Email from " + from + " to " + to + " : " + subject);
+	     
+	  try {
+	 
+	   Message message = new MimeMessage(gmailSession);
+	   message.setFrom(new InternetAddress(from));
+	   message.setRecipients(Message.RecipientType.TO,
+	    InternetAddress.parse(to));
+	   message.setSubject(subject);
+	   message.setText(content);
+	 
+	   Transport.send(message);
+	 
+	   log.debug("Email was sent");
+	 
+	  } catch (MessagingException e) {
+	   log.error("Error while sending email : " + e.getMessage());
+	  }
+	    }
+}

@@ -1,0 +1,86 @@
+package pi.transport.presentation.mbeans;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import org.primefaces.json.JSONException;
+
+import pi.transport.persistance.User;
+import pi.transport.services.UserService;
+import pi.transport.webservices.httpClientInscription;
+
+@ManagedBean
+@SessionScoped
+public class InscriptionBean {
+
+	@EJB
+	private UserService  service;
+	private Integer cin;
+	
+	private String passWord;
+	private String firstName;
+	private String lastName;
+	private String adress;
+	private String mail;
+	
+	
+	
+	public Integer getCin() {
+		return cin;
+	}
+	public void setCin(Integer cin) {
+		this.cin = cin;
+	}
+	
+	public String getPassWord() {
+		return passWord;
+	}
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	
+	public String getAdress() {
+		return adress;
+	}
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+	public String getMail() {
+		return mail;
+	}
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+	public String inscription()throws JSONException, IllegalAccessException{
+
+		httpClientInscription service=new httpClientInscription();
+	User u =new User();
+		u.setMail(mail);
+		u.setCin(cin);
+		u.setLastName(lastName);
+		u.setFirstName(firstName);
+		u.setPassWord(passWord);
+		u.setAdress(adress);
+		
+		service.register(u);
+		
+		
+		return "/index";
+		
+	}	
+	
+}

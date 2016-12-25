@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="Transport-ejb"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/Rahma/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar"/>
+  <path value="C:/Users/Rahma/.m2/repository/com/sun/mail/javax.mail/1.5.0/javax.mail-1.5.0.jar"/>
+  <path value="C:/Users/Rahma/.m2/repository/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar"/>
+  <path value="C:/Users/Rahma/.m2/repository/org/primefaces/primefaces/5.3/primefaces-5.3.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/faces-config.xml" project="Transport-web"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/primefaces-p.taglib.xml" project="Transport-web"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/primefaces-pm.taglib.xml" project="Transport-web"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rahma/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar"/>
+  <path value="/Transport-web/src/main/webapp/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="Transport-web"/>
+    </library>
+   </libraries>
+  </path>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="22" name="%0" offset="817" path="%1"/>
+   <linked-el length="27" name="%2" offset="600" path="%3"/>
+   <linked-el length="27" name="%2" offset="501" path="%3"/>
+   <linked-el length="20" name="%4" offset="727" path="%5"/>
+   <linked-el length="22" name="%6" offset="675" path="%1"/>
+   <linked-el length="19" name="%7" offset="864" path="%8"/>
+   <linked-el length="11" name="%7" offset="897" path="%5"/>
+   <linked-el length="30" name="%9" offset="998" path="%10"/>
+   <linked-el length="28" name="%9" offset="1301" path="%10"/>
+   <linked-el length="25" name="%9" offset="851" path="%10"/>
+   <linked-el length="31" name="%9" offset="1152" path="%10"/>
+   <linked-el length="26" name="%9" offset="558" path="%10"/>
+   <linked-el length="30" name="%9" offset="699" path="%10"/>
+   <linked-el length="35" name="%9" offset="1401" path="%10"/>
+   <linked-el length="21" name="%11" offset="1138" path="%12"/>
+   <linked-el length="21" name="%13" offset="1138" path="%12"/>
+   <linked-el length="19" name="%14" offset="864" path="%8"/>
+   <linked-el length="11" name="%14" offset="897" path="%5"/>
+   <linked-el length="23" name="%14" offset="1021" path="%5"/>
+   <linked-el length="29" name="%14" offset="1181" path="%5"/>
+   <linked-el length="12" name="%14" offset="535" path="%8"/>
+   <linked-el length="27" name="%14" offset="346" path="%5"/>
+   <linked-el length="17" name="%14" offset="700" path="%8"/>
+   <linked-el length="26" name="%14" offset="1042" path="%8"/>
+   <linked-el length="22" name="%14" offset="1170" path="%8"/>
+   <linked-el length="40" name="%14" offset="566" path="%5"/>
+   <linked-el length="21" name="%14" offset="373" path="%8"/>
+   <linked-el length="35" name="%14" offset="464" path="%5"/>
+   <linked-el length="7" name="%14" offset="880" path="%5"/>
+   <linked-el length="27" name="%14" offset="1100" path="%5"/>
+   <linked-el length="22" name="%14" offset="839" path="%5"/>
+   <linked-el length="37" name="%14" offset="680" path="%5"/>
+   <linked-el length="20" name="%15" offset="727" path="%5"/>
+   <linked-el length="22" name="%16" offset="1170" path="%17"/>
+   <linked-el length="19" name="%16" offset="980" path="%17"/>
+   <linked-el length="22" name="%16" offset="1437" path="%17"/>
+   <linked-el length="27" name="%18" offset="600" path="%3"/>
+   <linked-el length="27" name="%18" offset="501" path="%3"/>
+   <linked-el length="26" name="%19" offset="1042" path="%8"/>
+   <linked-el length="22" name="%19" offset="1170" path="%8"/>
+   <linked-el length="40" name="%19" offset="566" path="%5"/>
+   <linked-el length="21" name="%19" offset="373" path="%8"/>
+   <linked-el length="35" name="%19" offset="464" path="%5"/>
+   <linked-el length="23" name="%19" offset="1021" path="%5"/>
+   <linked-el length="29" name="%19" offset="1181" path="%5"/>
+   <linked-el length="27" name="%19" offset="1100" path="%5"/>
+   <linked-el length="27" name="%19" offset="346" path="%5"/>
+   <linked-el length="22" name="%19" offset="839" path="%5"/>
+   <linked-el length="37" name="%19" offset="680" path="%5"/>
+   <linked-el length="23" name="%20" offset="553" path="%1"/>
+   <linked-el length="22" name="%21" offset="1170" path="%17"/>
+   <linked-el length="19" name="%21" offset="980" path="%17"/>
+   <linked-el length="22" name="%21" offset="1437" path="%17"/>
+   <linked-el length="40" name="%22" offset="566" path="%5"/>
+   <linked-el length="19" name="%22" offset="864" path="%8"/>
+   <linked-el length="35" name="%22" offset="464" path="%5"/>
+   <linked-el length="12" name="%22" offset="535" path="%8"/>
+   <linked-el length="17" name="%22" offset="700" path="%8"/>
+   <linked-el length="37" name="%22" offset="680" path="%5"/>
+   <linked-el length="22" name="%23" offset="675" path="%1"/>
+   <linked-el length="22" name="%23" offset="817" path="%1"/>
+   <linked-el length="21" name="%23" offset="954" path="%1"/>
+   <linked-el length="23" name="%23" offset="553" path="%1"/>
+   <linked-el length="30" name="%24" offset="998" path="%10"/>
+   <linked-el length="28" name="%24" offset="1301" path="%10"/>
+   <linked-el length="25" name="%24" offset="851" path="%10"/>
+   <linked-el length="31" name="%24" offset="1152" path="%10"/>
+   <linked-el length="26" name="%24" offset="558" path="%10"/>
+   <linked-el length="30" name="%24" offset="699" path="%10"/>
+   <linked-el length="35" name="%24" offset="1401" path="%10"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="mailBean.message" value="%0"/>
+  <alias
+   path="/Transport-web/src/main/java/pi/transport/presentation/mbeans/ScheduleBean.java" value="%2"/>
+  <alias
+   path="/Transport-ejb/src/main/java/pi/transport/persistance/Sector.java" value="%7"/>
+  <alias path="/Transport-web/src/main/webapp/admin/listroutes.xhtml" value="%8"/>
+  <alias path="project" value="%13"/>
+  <alias
+   path="/Transport-web/src/main/java/pi/transport/presentation/convertisseur/SectorConvertor.java" value="%15"/>
+  <alias path="userBean" value="%16"/>
+  <alias path="ScheduleMB" value="%18"/>
+  <alias path="/Transport-web/pom.xml" value="%12"/>
+  <alias
+   path="/Transport-web/src/main/java/pi/transport/presentation/mbeans/RouteSuggestionBean.java" value="%19"/>
+  <alias path="mailBean.recipient" value="%20"/>
+  <alias path="mailBean" value="%23"/>
+  <alias path="/Transport-web/src/main/webapp/admin/sendmail.xhtml" value="%1"/>
+  <alias
+   path="/Transport-web/src/main/java/pi/transport/presentation/mbeans/InscriptionBean.java" value="%24"/>
+  <alias path="/Transport-web/src/main/webapp/admin/formroutes.xhtml" value="%5"/>
+  <alias path="sectorConvertor" value="%4"/>
+  <alias path="mailBean.subject" value="%6"/>
+  <alias path="inscriptionBean" value="%9"/>
+  <alias path="project.artifactId" value="%11"/>
+  <alias path="routeSMB" value="%14"/>
+  <alias path="/Transport-web/src/main/webapp/Schedule/Schedule.xhtml" value="%3"/>
+  <alias path="/Transport-web/src/main/webapp/register/register.xhtml" value="%10"/>
+  <alias
+   path="/Transport-web/src/main/java/pi/transport/presentation/mbeans/UserBean.java" value="%21"/>
+  <alias path="/Transport-web/src/main/webapp/template/login.xhtml" value="%17"/>
+  <alias
+   path="/Transport-ejb/src/main/java/pi/transport/persistance/RouteSuggestion.java" value="%22"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://xmlns.jcp.org/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://xmlns.jcp.org/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+  <uri value="http://primefaces.org/ui">
+   <prefix>p</prefix>
+  </uri>
+ </uris>
+</kb-project>
